@@ -1,24 +1,34 @@
 # Localshelf
 
-TODO: Write a gem description
+Ebook shelf for a group.
+
+Localshelf allows users to manage and share their ebooks within a local network
+through its web interface.
+
+Only EPUB format is supported currently.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'localshelf'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Execute this line to install:
 
     $ gem install localshelf
 
 ## Usage
 
-TODO: Write usage instructions here
+Create a bookshelf:
+
+    $ localshelf init
+    $ localshelf create OfficeShelf
+
+Import ebooks to your bookshelf:
+
+    $ localshelf import path/to/folder/
+
+Share your bookshelf with others:
+
+    $ localshelf server
+
+Then check out http://<your-ip-address>:4567/ to see your collection.
 
 ## Contributing
 
